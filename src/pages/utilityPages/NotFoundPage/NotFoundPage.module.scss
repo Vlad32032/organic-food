@@ -1,0 +1,51 @@
+@import "../../../scss/variables";
+
+.notFount {
+    display: flex;
+    justify-content: center;
+
+    height: 899px;
+
+    background-color: #bbc9c9;
+
+    .wpapper {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        position: relative;
+
+        width: 1920px;
+        height: 898px;
+    }
+
+    .icon {
+        position: absolute;
+        top: 1px;
+
+        background-image: url(../../../assets/images/background-image/NotFoundBG.jpg);
+    }
+
+    .description {
+        position: relative;
+        z-index: 5;
+
+        padding-right: 20vh;
+
+        h2 {
+            margin-top: 10px;
+
+            font-weight: 800;
+            font-size: 70px;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 165%;
+        }
+    }
+}

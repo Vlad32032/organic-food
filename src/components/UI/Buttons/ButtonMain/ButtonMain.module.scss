@@ -1,0 +1,43 @@
+@import "../../../../scss/variables";
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 237px;
+    height: 80px;
+
+    background-color: $main-button-color;
+    border: none;
+    border-radius: 16px;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    color: $main-button-text-color;
+
+    transition: transform ease-in 100ms;
+
+    cursor: pointer;
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    // &Main {
+    //     // background-color: $main-button-color;
+    // }
+
+    &Second {
+        background-color: $second-button-color;
+        color: $second-button-text-color;
+    }
+
+    &Third {
+        background-color: $third-button-color;
+        border: 1px solid $second-border-color;
+        color: $second-button-text-color;
+    }
+}

@@ -1,0 +1,59 @@
+@import "../../../scss/variables";
+
+.changelog {
+    padding-bottom: 100px;
+    background-color: $main-bg-color;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        height: 225px;
+
+        background-color: $second-bg-color;
+
+        &SVG {
+            position: absolute;
+        }
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    .version {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 705px;
+        height: 216px;
+        padding: 0 40px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        border-radius: 30px;
+        box-shadow: 0 39px 37px 0 rgba(195, 195, 195, 0.25);
+
+        img {
+            border-radius: 50%;
+        }
+
+        h3 {
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+
+            color: $second-text-color;
+        }
+    }
+}

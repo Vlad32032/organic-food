@@ -1,0 +1,52 @@
+@import "../../../../scss/variables";
+
+.cartActions {
+    display: flex;
+    gap: 20px;
+
+    .quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &Button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 134px;
+            height: 80px;
+
+            border: 2px solid $second-border-color;
+            border-radius: 16px;
+
+            overflow: hidden;
+
+            button {
+                width: 30px;
+                height: 100%;
+
+                color: $fourth-text-color;
+
+                transition: background-color ease-in 300ms;
+            }
+
+            span {
+                display: block;
+
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            &:hover button {
+                background-color: $third-bg-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import "../../../../scss/variables";
+
+.shopSingleBlock {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1400px;
+    margin: 130px auto 80px;
+
+    .wrapperImg {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 590px;
+        height: 560px;
+
+        background-color: $second-bg-color;
+        // border: 1px solid $main-border-color;
+        border-radius: 30px;
+
+        .category {
+            position: absolute;
+            top: 38px;
+            left: 35px;
+
+            display: inline-block;
+
+            padding: 5px 16px;
+
+            background-color: $third-bg-color;
+            border-radius: 8px;
+
+            font-family: $second-font-family;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+
+            color: $fourth-text-color;
+        }
+
+        img {
+            border-radius: 30px;
+
+            max-width: 530px;
+            max-height: 500px;
+        }
+    }
+
+    .wrapperDescription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 660px;
+
+        h2 {
+            margin-bottom: 10px;
+
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            margin-bottom: 25px;
+        }
+
+        .description {
+            margin-bottom: 35px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+        }
+
+        &Skeleton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 660px;
+
+            div {
+                background-color: $second-bg-color;
+                border-radius: 8px;
+
+                &:nth-child(1) {
+                    width: 400px;
+                    height: 46px;
+                    margin-bottom: 10px;
+                }
+
+                &:nth-child(2) {
+                    width: 120px;
+                    height: 49px;
+                    margin-bottom: 25px;
+                }
+
+                &:nth-child(3) {
+                    width: 650px;
+                    height: 90px;
+                    margin-bottom: 35px;
+                }
+
+                &:nth-child(4) {
+                    width: 500px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}

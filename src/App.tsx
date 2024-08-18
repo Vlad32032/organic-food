@@ -1,24 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import "./scss/app.scss"
+
+import { Route, Routes } from 'react-router-dom';
+
+import MainLayout from './layouts/MainLayout';
+import UtilityLayout from './layouts/UtilityLayout';
+
+import HomePage from './pages/mainPages/HomePage/HomePage';
+import ShopPage from './pages/mainPages/ShopPage/ShopPage';
+import ShopSinglePage from './pages/mainPages/ShopSinglePage/ShopSinglePage';
+import CartPage from './pages/mainPages/CartPage/CartPage';
+
+import NotFoundPage from './pages/utilityPages/NotFoundPage/NotFoundPage';
+import LicencesPage from './pages/utilityPages/LicencesPage/LicencesPage';
+import ChangelogPage from './pages/utilityPages/ChangelogPage/ChangelogPage';
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<MainLayout />}>
+          <Route path='' element={<HomePage />} />
+          <Route path='shop' element={<ShopPage />} />
+          <Route path='food/:id' element={<ShopSinglePage />} />
+          <Route path='cart' element={<CartPage />}/>
+        </Route>
+
+        <Route path='/' element={<UtilityLayout />}>
+          <Route path='changelog' element={<ChangelogPage />} />
+          <Route path='licences' element={<LicencesPage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

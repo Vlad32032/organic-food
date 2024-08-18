@@ -1,0 +1,43 @@
+@import "../../../scss/variables";
+
+.bannerBlock {
+    background-color: $second-bg-color;
+
+    overflow: hidden;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 1920px;
+        height: 450px;
+        margin: 0 auto;
+
+        h2 {
+            font-weight: 800;
+            font-size: 70px;
+        }
+
+        @media (min-width: 1921px) {
+            border-radius: 30px;
+        }
+    }
+
+    &AboutUs {
+        background-image: url(../../../assets/images/background-image/BannerBG/BannerBGAboutUs.jpg);
+    }
+
+    &Shop {
+        background-image: url(../../../assets/images/background-image/BannerBG/BannerBGShop.jpg);
+    }
+
+    &ShopSingle {
+        background-image: url(../../../assets/images/background-image/BannerBG/BannerBGShopSingle.jpg);
+    }
+
+    &Cart {
+        background-image: url(../../../assets/images/background-image/BannerBG/BannerBGCart.jpg);
+    }
+
+}

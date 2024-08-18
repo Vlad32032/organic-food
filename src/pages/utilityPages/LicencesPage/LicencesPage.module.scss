@@ -1,0 +1,60 @@
+@import "../../../scss/variables";
+
+.licence {
+    background-color: $main-bg-color;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        height: 225px;
+
+        background-color: $second-bg-color;
+
+        &SVG {
+            position: absolute;
+        }
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+
+        padding: 150px 0;
+
+        .descriptionWrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+
+            width: 1300px;
+
+            h3 {
+                font-weight: 800;
+                font-size: 40px;
+            }
+
+            div {
+                max-width: 830px;
+
+                p {
+                    margin-bottom: 20px;
+
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 165%;
+                }
+            }
+        }
+    }
+}

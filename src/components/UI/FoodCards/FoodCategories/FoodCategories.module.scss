@@ -1,0 +1,32 @@
+@import "../../../../scss/variables";
+
+.foodCategories {
+    width: 1400px;
+    padding: 90px 0 20px;
+    margin: 0 auto;
+    
+    ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 150px;
+            height: 40px;
+
+            background-color: $second-bg-color;
+            border: 1px solid $main-border-color;
+            border-radius: 12px;
+
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: $main-button-color;
+            color: $fourth-text-color;
+        }
+    }
+}

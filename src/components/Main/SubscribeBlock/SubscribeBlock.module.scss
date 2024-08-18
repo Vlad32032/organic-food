@@ -1,0 +1,67 @@
+@import "../../../scss/variables";
+
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 0 20px;
+
+    background-color: $main-bg-color;
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 1400px;
+        height: 323px;
+        padding: 0 70px;
+
+        background-color: $second-bg-color;
+        background-image: url(../../../assets/images/background-image/subscribeBlockBG.jpg);
+    
+
+        border-radius: 30px;
+
+        h2 {
+            max-width: 355px;
+    
+            font-weight: 800;
+            font-size: 50px;
+    
+            color: $fourth-text-color;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            width: 349px;
+            height: 80px;
+            padding: 0 23px;
+
+            background-color: $main-bg-color;
+            border-radius: 16px;
+
+            // &:focus {
+            //     border: 1px solid $main-border-color;
+            // }
+
+            &::placeholder {
+
+                color: #ababab;
+                opacity: 1; /* Firefox */
+            }
+              
+            &::-ms-input-placeholder { /* Edge 12 -18 */
+                color: #ababab;
+            }
+        }
+    }
+}
