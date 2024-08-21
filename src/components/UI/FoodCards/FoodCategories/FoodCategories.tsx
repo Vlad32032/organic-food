@@ -18,6 +18,8 @@ const FoodCategories: FC = () => {
 
     return (
         <div className={styles.foodCategories}>
+            <h3>Categories</h3>
+
             <ul>
                 {dataCategories.map((category) => (
                     <li

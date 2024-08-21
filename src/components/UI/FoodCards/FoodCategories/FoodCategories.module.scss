@@ -1,10 +1,22 @@
 @import "../../../../scss/variables";
 
 .foodCategories {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
     width: 1400px;
     padding: 90px 0 20px;
     margin: 0 auto;
     
+    h3 {
+        font-family: $third-font-family;
+        font-weight: 400;
+        font-size: 36px;
+
+        color: $third-text-color;
+    }
+
     ul {
         display: flex;
         gap: 20px;
