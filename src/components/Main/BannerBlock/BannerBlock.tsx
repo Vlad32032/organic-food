@@ -12,6 +12,7 @@ const BannerBlock: FC<IBannerBlock> = ({ title }) => {
         if (title === 'Shop') return styles.bannerBlockShop;
         if (title === 'Shop Single') return styles.bannerBlockShopSingle;
         if (title === 'Cart') return styles.bannerBlockCart
+        if (title === 'Our Team') return styles.bannerBlockOurTeam
         return ''
     };
 

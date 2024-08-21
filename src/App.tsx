@@ -11,6 +11,7 @@ import HomePage from './pages/mainPages/HomePage/HomePage';
 import ShopPage from './pages/mainPages/ShopPage/ShopPage';
 import ShopSinglePage from './pages/mainPages/ShopSinglePage/ShopSinglePage';
 import CartPage from './pages/mainPages/CartPage/CartPage';
+import OurTeamPage from './pages/mainPages/OurTeamPage/OurTeamPage';
 
 import NotFoundPage from './pages/utilityPages/NotFoundPage/NotFoundPage';
 import LicencesPage from './pages/utilityPages/LicencesPage/LicencesPage';
@@ -25,6 +26,7 @@ const App: React.FC = () => {
           <Route path='shop' element={<ShopPage />} />
           <Route path='food/:id' element={<ShopSinglePage />} />
           <Route path='cart' element={<CartPage />}/>
+          <Route path='team' element={<OurTeamPage />} />
         </Route>
 
         <Route path='/' element={<UtilityLayout />}>

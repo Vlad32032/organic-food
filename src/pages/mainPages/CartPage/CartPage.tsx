@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import BannerBlock from "../../../components/Main/BannerBlock/BannerBlock";
 import CartBlock from "../../../components/Main/CartBlock/CartBlock";
 

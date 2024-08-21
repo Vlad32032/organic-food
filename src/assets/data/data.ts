@@ -4,7 +4,8 @@
 export const dataNav = [
     {name: 'Home', pathname: '/home'},
     {name: 'About', pathname: '/about'},
-    {name: 'Shop', pathname: '/shop'}
+    {name: 'Shop', pathname: '/shop'},
+    {name: 'Team', pathname: '/team'}
 ];
 
 // used in /components/Footer
