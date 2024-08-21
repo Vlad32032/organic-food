@@ -1,13 +1,18 @@
 import { FC } from "react";
 
+import styles from "./Footer.module.scss"
+
 import { Link } from "react-router-dom";
 
-import styles from "./Footer.module.scss"
+import { dataFooterNav } from "../../assets/data/data";
 
 import HeaderLogo from "../Header/HeaderLogo/HeaderLogo";
 import { IconsFacebock, IconsInstagram, IconsPinterest, IconsTwitter } from "../Icons/Icons";
+import { link } from "fs";
 
 const Footer: FC = () => {
+    const footerNav = dataFooterNav;
+
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContact}>
@@ -48,9 +53,7 @@ const Footer: FC = () => {
             <div className={styles.footerUtility}>
                 <h2 className={styles.footerH2}>Utility Pages</h2>
                 
-                <Link to="/404">404 Not Found</Link>
-                <Link to="/licences">Licences</Link>
-                <Link to="/changelog">Changelog</Link>
+                { footerNav.map((link) => <Link to={link.pathname}>{link.name}</Link>)}
             </div>
         </footer>
     );

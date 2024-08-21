@@ -7,6 +7,13 @@ export const dataNav = [
     {name: 'Shop', pathname: '/shop'}
 ];
 
+// used in /components/Footer
+export const dataFooterNav = [
+    {name: '404 Not Found', pathname: '/404'},
+    {name: 'Licences', pathname: '/licences'},
+    {name: 'Changelog', pathname: '/changelog'}
+];
+
 // used in /components/UI/FoodCards/FoodCategories
 export const dataCategories = [
     {id: 0, category: "all"},
