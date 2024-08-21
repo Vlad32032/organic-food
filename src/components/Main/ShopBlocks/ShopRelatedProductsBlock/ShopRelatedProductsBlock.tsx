@@ -2,6 +2,10 @@ import { FC, useEffect } from "react";
 
 import styles from "./ShopRelatedProductsBlock.module.scss";
 
+import { shopRelatedProductsMaxFoodCard } from "../../../../assets/data/data";
+
+import { useParams } from "react-router-dom";
+
 import { useAppDispatch, useAppSelector } from "../../../../redux/store";
 import { selectfoodProductsState } from "../../../../redux/foodProducts/selectors";
 import { selectFiltersState } from "../../../../redux/filters/selectors";
@@ -13,16 +17,21 @@ import FoodCard from "../../../UI/FoodCards/FoodCard/FoodCard";
 import FoodCardSkeleton from "../../../UI/FoodCards/FoodCard/FoodCardSkeleton";
 
 const ShopRelatedProductsBlock: FC = () => {
-    const maxFoodCard = 4;
+    const maxFoodCard = shopRelatedProductsMaxFoodCard;
 
     const dispatch = useAppDispatch();
 
+    const { id } = useParams();
     const { statusFoodRelatedProducts: status, foodRelatedProducts } = useAppSelector(selectfoodProductsState);
     const { activeCategories } = useAppSelector(selectFiltersState);
     
     useEffect(() => {
         if (activeCategories !== 0) dispatch(fetchFoodRelatedProducts(createUrlByCategory(activeCategories))); 
     }, [activeCategories]);
+
+    const RenderfoodRelatedProducts = foodRelatedProducts
+        .filter((food) => food.id !== id)
+        .map((food, i) => i < maxFoodCard && <FoodCard key={food.id} {...food}/>);
 
     if ( activeCategories === 0 ) return <></>;
     
@@ -33,9 +42,9 @@ const ShopRelatedProductsBlock: FC = () => {
                 { status === 'error' && <span>Error feach...</span>}
 
                 { status === 'loading' ? (
-                    [...new Array(4)].map((_, i) => <FoodCardSkeleton key={i}/>) 
+                    [...new Array(maxFoodCard)].map((_, i) => <FoodCardSkeleton key={i}/>) 
                 ) : foodRelatedProducts && 
-                    foodRelatedProducts.map((food, i) => i < maxFoodCard && <FoodCard key={food.id} {...food}/>)
+                    RenderfoodRelatedProducts
                 }
             </div>
         </section>

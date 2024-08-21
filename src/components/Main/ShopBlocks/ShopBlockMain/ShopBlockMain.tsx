@@ -2,6 +2,8 @@ import { FC, useEffect, useRef } from "react";
 
 import styles from "./ShopBlockMain.module.scss";
 
+import { shopBlockMainSkeletonsCount } from "../../../../assets/data/data";
+
 import { useAppDispatch, useAppSelector } from "../../../../redux/store";
 import { selectfoodProductsState } from "../../../../redux/foodProducts/selectors";
 import { selectFiltersState } from "../../../../redux/filters/selectors";
@@ -16,11 +18,12 @@ import FoodNotFound from "../../../UI/FoodCards/FoodNotFound/FoodNotFound";
 import FoodCategories from "../../../UI/FoodCards/FoodCategories/FoodCategories";
 
 const ShopBlockMain: FC = () => {
+    const skeletonsCount = shopBlockMainSkeletonsCount;
+
     const dispatch = useAppDispatch();
     const { foodProductsList, status } = useAppSelector(selectfoodProductsState);
     const { activeCategories, activeSearchValue } = useAppSelector(selectFiltersState);
     const isMounted = useRef(false);
-    const skeletonsCount = 8;
 
     useEffect(() => {
         if (isMounted.current) {

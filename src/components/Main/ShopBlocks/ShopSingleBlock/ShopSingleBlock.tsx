@@ -2,7 +2,7 @@ import { FC, useEffect } from "react";
 
 import styles from "./ShopSingleBlock.module.scss";
 
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../../redux/store";
 import { selectfoodProductsState } from "../../../../redux/foodProducts/selectors";
@@ -21,6 +21,7 @@ import CartActions from "../../../UI/CartCards/CartActions/CartActions";
 const ShopSingleBlock: FC = () => {
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const { id } = useParams();
     const { statusFoodById: status, foodById } = useAppSelector(selectfoodProductsState);
@@ -28,7 +29,7 @@ const ShopSingleBlock: FC = () => {
 
     useEffect(() => {
         dispatch(fetchFoodById(createUrlByID(id)));
-    }, [])
+    }, [location.pathname])
 
     useEffect(() => {
         if (foodById) dispatch(setActiveCategories(foodById.category));

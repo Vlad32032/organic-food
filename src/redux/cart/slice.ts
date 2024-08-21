@@ -1,19 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-export interface ICartItem {
-    id: string,
-    title: string,
-    price: number,
-    images: string[],
-    quantity: number
-};
-
-export interface ICartState {
-    cartItems: ICartItem[]
-};
+import { ICartItem, ICartState } from "./types";
+import { getCartFromLocalStorage } from "../../utils/getCartFromLocalStorage";
 
 const initialState: ICartState = {
-    cartItems: []
+    cartItems: getCartFromLocalStorage()
 };
 
 export const cartSlise = createSlice({
@@ -47,19 +37,17 @@ export const cartSlise = createSlice({
             };
         },
 
-        removeAllCartItem: (state, action: PayloadAction<ICartItem>) => {
+        removeAllCartItem: (state, action: PayloadAction<string>) => {
             state.cartItems = state.cartItems.filter(
-                (obj) => obj.id !== action.payload.id
+                (obj) => obj.id !== action.payload
             );
         },
-        // clearCartItems: (state) => {
-        //     state.totalPrice = 0;
-        //     state.totalCount = 0;
-        //     state.cartItems = [];
-        // },
+        clearCartItems: (state) => {
+            state.cartItems = [];
+        },
 	}
 });
 
-export const { addCartItem, removeCartItem } = cartSlise.actions;
+export const { addCartItem, removeCartItem, removeAllCartItem, clearCartItems } = cartSlise.actions;
 
 export default cartSlise.reducer;

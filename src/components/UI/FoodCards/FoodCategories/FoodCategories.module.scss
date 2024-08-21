@@ -22,6 +22,14 @@
             border-radius: 12px;
 
             cursor: pointer;
+
+            transition: 
+            background-color ease-in 300ms,
+            box-shadow ease-in 300ms;
+
+            &:hover {
+                box-shadow: $second-box-shadow;
+            }
         }
 
         .active {

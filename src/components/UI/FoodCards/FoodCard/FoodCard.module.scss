@@ -9,6 +9,15 @@
 
     cursor: pointer;
 
+    transition: 
+        background-color ease-in 300ms,
+        box-shadow ease-in 300ms;
+
+    &:hover {
+        background-color: $main-bg-color;
+        box-shadow: $main-box-shadow;
+    }
+
     &Category {
         display: inline-block;
 

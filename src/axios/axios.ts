@@ -16,7 +16,7 @@ export const createUrlByID = ( id: string | undefined ) => {
 };
 
 export const createUrlByCategory = ( category: number ) => {
-	return `${URL}?category=${category}`;
+	return `${URL}?category=${category}&sortBy=rating&order=desc`;
 };
 
 export const axiosFetch = async (url: string) => {

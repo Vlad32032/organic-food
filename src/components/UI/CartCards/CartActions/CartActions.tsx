@@ -3,7 +3,8 @@ import { FC } from "react";
 import styles from "./CartActions.module.scss";
 
 import { useAppDispatch, useAppSelector } from "../../../../redux/store";
-import { addCartItem, ICartItem, removeCartItem } from "../../../../redux/cart/slice";
+import { addCartItem, removeCartItem } from "../../../../redux/cart/slice";
+import { ICartItem } from "../../../../redux/cart/types";
 
 import ButtonMain from "../../Buttons/ButtonMain/ButtonMain";
 
@@ -41,7 +42,7 @@ const CartActions: FC<ICartItem> = ({ id, title, price, images }) => {
                 </div>
             </div>
 
-            <ButtonMain onClick={onClickAddToCart} buttonStyle="main">{cartItem ? 'Add more' : 'Add To Cart'}</ButtonMain>
+            <ButtonMain onClick={onClickAddToCart} >{cartItem ? 'Add more' : 'Add To Cart'}</ButtonMain>
         </div>
     );
 };
