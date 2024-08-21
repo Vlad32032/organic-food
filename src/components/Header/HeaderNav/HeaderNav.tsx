@@ -1,31 +1,18 @@
 import { FC } from "react";
 
-import { Link } from "react-router-dom";
-
 import styles from "../Header.module.scss";
 
+import { Link } from "react-router-dom";
+
+import { dataNav } from "../../../assets/data/data";
+
 const HeaderNav: FC = () => {
+    const nav = dataNav;
+
     return (
         <nav className={styles.headerNav}>
             <ul>
-                <li>
-                    <Link to="">Home</Link>
-                </li>
-                <li>
-                    <Link to="">About</Link>
-                </li>
-                <li>
-                    <Link to="">Pages</Link>
-                </li>
-                <li>
-                    <Link to="/shop">Shop</Link>
-                </li>
-                <li>
-                    <Link to="">Projects</Link>
-                </li>
-                <li>
-                    <Link to="">News</Link>
-                </li>
+                {nav.map((link) => <li><Link to={link.pathname}>{link.name}</Link></li>)}
             </ul>
         </nav>
     );

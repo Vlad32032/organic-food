@@ -1,4 +1,11 @@
-// import s from '../../components'
+// import s from '../../components/Header/HeaderNav'
+
+// used in /components/Header/HeaderNav
+export const dataNav = [
+    {name: 'Home', pathname: '/home'},
+    {name: 'About', pathname: '/about'},
+    {name: 'Shop', pathname: '/shop'}
+];
 
 // used in /components/UI/FoodCards/FoodCategories
 export const dataCategories = [
