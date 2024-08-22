@@ -1,3 +1,41 @@
+@import "../../../../scss/variables";
+
 .teamBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 1400px;
+    margin: 100px auto;
+
+    h2 {
+        font-family: $third-font-family;
+        font-weight: 400;
+        font-size: 36px;
+        color: $third-text-color;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        max-width: 850px;
+        margin-bottom: 42px;
+
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 165%;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 27px;
+        grid-row-gap: 42px;
+    }
 }

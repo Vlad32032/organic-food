@@ -1,8 +1,15 @@
 // used in /components/Main/AboutUsBlocks/TeamBlock
 
+import photoGiovaniBacardo from "../../assets/images/team-image/GiovaniBacardo.jpg";
+import photoMarianneLoreno from "../../assets/images/team-image/MarianneLoreno.jpg";
+import photoRigaPelore from "../../assets/images/team-image/RigaPelore.jpg";
+import photoKeiraKnightley from "../../assets/images/team-image/KeiraKnightley.jpg";
+import photoScottLawrence from "../../assets/images/team-image/ScottLawrence.jpg";
+import photoKarenAllen from "../../assets/images/team-image/KarenAllen.jpg";
+
 export interface IDataTeamLink {
-    name: string,
-    link: string
+    name: 'instagram' | 'facebook' | 'twitter',
+    link: string 
 };
 
 export interface IDataTeamWorker {
@@ -18,7 +25,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '1',
         name: 'Giovani Bacardo', 
         profession: 'Farmer',
-        photo: 'GiovaniBacardo',
+        photo: photoGiovaniBacardo,
         links: [
             {
                 name: 'facebook',
@@ -34,7 +41,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '2',
         name: 'Marianne Loreno', 
         profession: 'Designer',
-        photo: 'MarianneLoreno',
+        photo: photoMarianneLoreno,
         links: [
             {
                 name: 'instagram',
@@ -54,7 +61,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '3',
         name: 'Riga Pelore', 
         profession: 'Farmer',
-        photo: 'RigaPelore',
+        photo: photoRigaPelore,
         links: [
             {
                 name: 'instagram',
@@ -70,7 +77,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '4',
         name: 'Keira Knightley', 
         profession: 'Farmer',
-        photo: 'KeiraKnightley',
+        photo: photoKeiraKnightley,
         links: [
             {
                 name: 'instagram',
@@ -86,7 +93,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '5',
         name: 'Scott Lawrence', 
         profession: 'Designer',
-        photo: 'ScottLawrence',
+        photo: photoScottLawrence,
         links: [
             {
                 name: 'instagram',
@@ -106,7 +113,7 @@ export const dataTeam: IDataTeamWorker[] = [
         id: '5',
         name: 'Karen Allen', 
         profession: 'Farmer',
-        photo: 'KarenAllen',
+        photo: photoKarenAllen,
         links: [
             {
                 name: 'instagram',

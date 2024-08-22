@@ -1,0 +1,56 @@
+@import "../../../../scss/variables";
+
+.teamCart {
+    width: 449px;
+    height: 615px;
+
+    background-color: $second-bg-color;
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    transition: 
+        background-color ease-in 300ms,
+        box-shadow ease-in 300ms;
+
+    &:hover {
+        background-color: $main-bg-color;
+        box-shadow: $main-box-shadow;
+    }
+
+    img {
+        width: 449px;
+        height: 485px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 35px 28px;
+
+        &Title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h4 {
+                font-weight: 800;
+                font-size: 25px;
+            }
+    
+            span {
+                font-family: $third-font-family;
+                font-weight: 400;
+                font-size: 22px;
+                color: $third-text-color;
+            }
+        }
+
+        &Links {
+            display: flex;
+            align-items:flex-end;
+            gap: 17px;
+        }
+    }
+}
