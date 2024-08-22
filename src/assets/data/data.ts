@@ -1,4 +1,6 @@
-// import s from '../../components/Header/HeaderNav'
+// import s from '../../components'
+
+import { link } from "fs";
 
 // used in /components/Header/HeaderNav
 export const dataNav = [
