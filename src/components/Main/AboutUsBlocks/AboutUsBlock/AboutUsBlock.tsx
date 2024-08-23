@@ -3,6 +3,7 @@ import { FC } from "react";
 import styles from "./AboutUsBlock.module.scss";
 
 import aboutUsBlockBG from "../../../../assets/images/background-image/AboutUsBlockBG.jpg"
+
 import { IconsFactory, IconsTraktor } from "../../../Icons/aboutUsIcons";
 
 const AboutUsBlock: FC = () => {
