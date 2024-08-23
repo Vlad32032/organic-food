@@ -1,0 +1,61 @@
+@import "../../../../scss/variables";
+
+.aboutUsBlock {
+    display: flex;
+
+    margin: 120px auto;
+
+    width: 1600px;
+
+    img {
+        width: 900px;
+    }
+
+    .wrapper {
+        width: 675px;
+        margin-top: 80px;
+
+        h2 {
+            margin-bottom: 8px;
+
+            font-family: $third-font-family;
+            font-weight: 400;
+            font-size: 36px;
+            color: $third-text-color;
+        }
+
+        h3 {
+            margin-bottom: 14px;
+
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            margin-bottom: 50px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+        }
+
+        .points {
+            display: flex;
+            gap: 65px;
+
+            div {
+                display: flex;
+                gap: 15px;
+
+                max-width: 300px;
+
+                font-weight: 500;
+                font-size: 25px;
+            }
+        }
+    }
+}
