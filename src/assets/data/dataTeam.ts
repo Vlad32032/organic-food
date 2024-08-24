@@ -110,7 +110,7 @@ export const dataTeam: IDataTeamWorker[] = [
         ]
     },
     {
-        id: '5',
+        id: '6',
         name: 'Karen Allen', 
         profession: 'Farmer',
         photo: photoKarenAllen,
