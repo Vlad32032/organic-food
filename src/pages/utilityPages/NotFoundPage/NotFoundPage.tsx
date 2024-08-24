@@ -4,7 +4,7 @@ import styles from "./NotFoundPage.module.scss"
 
 import { Link } from "react-router-dom";
 
-import { Icons404, IconsNotFoundBG } from "../../../components/Icons/utilityIcons";
+import { Icons404, IconsNotFoundBG } from "../../../components/_Icons/utilityIcons";
 import ButtonMain from "../../../components/UI/Buttons/ButtonMain/ButtonMain";
 
 const NotFoundPage: FC = () => {

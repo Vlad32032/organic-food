@@ -4,7 +4,7 @@ import styles from "./AboutUsBlock.module.scss";
 
 import aboutUsBlockBG from "../../../../assets/images/background-image/AboutUsBlockBG.jpg"
 
-import { IconsFactory, IconsTraktor } from "../../../Icons/aboutUsIcons";
+import { IconsFactory, IconsTraktor } from "../../../_Icons/aboutUsIcons";
 
 const AboutUsBlock: FC = () => {
     return (

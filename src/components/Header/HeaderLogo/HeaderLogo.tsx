@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "../Header.module.scss";
 
-import { IconsLogoOrganic } from "../../Icons/Icons";
+import { IconsLogoOrganic } from "../../_Icons/Icons";
 
 const HeaderLogo: FC = () => {
     return (

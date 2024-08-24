@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "./FoodRating.module.scss";
 
-import { IconsRatingStar, IconsRatingStarOff } from "../../../Icons/UIIcons";
+import { IconsRatingStar, IconsRatingStarOff } from "../../../_Icons/UIIcons";
 
 interface IFoodRating {
     rating: number

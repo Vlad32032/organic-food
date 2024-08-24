@@ -4,7 +4,7 @@ import styles from "./TeamLink.module.scss";
 
 import { IDataTeamLink } from "../../../../assets/data/dataTeam";
 
-import { IconsTeamFacebock, IconsTeamInstagram, IconsTeamTwitter } from "../../../Icons/teamIcons";
+import { IconsTeamFacebock, IconsTeamInstagram, IconsTeamTwitter } from "../../../_Icons/teamIcons";
 
 const TeamLink: FC<IDataTeamLink> = ({ name, link}) => {
     const renderIcon = () => {

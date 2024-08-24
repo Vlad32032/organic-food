@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 
 import styles from "./ButtonMain.module.scss";
 
-import { IconsButton } from "../../../Icons/Icons";
+import { IconsButton } from "../../../_Icons/Icons";
 
 interface IButtonMain {
     buttonStyle?: string,

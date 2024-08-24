@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { dataFooterNav } from "../../assets/data/data";
 
 import HeaderLogo from "../Header/HeaderLogo/HeaderLogo";
-import { IconsFacebock, IconsInstagram, IconsPinterest, IconsTwitter } from "../Icons/Icons";
+import { IconsFacebock, IconsInstagram, IconsPinterest, IconsTwitter } from "../_Icons/Icons";
 import { link } from "fs";
 
 const Footer: FC = () => {

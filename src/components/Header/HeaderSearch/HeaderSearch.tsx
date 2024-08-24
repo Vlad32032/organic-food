@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from "../../../redux/store";
 import { setActiveSearchValue } from "../../../redux/filters/slice";
 import { selectFiltersState } from "../../../redux/filters/selectors";
 
-import { IconsSearch } from "../../Icons/Icons";
+import { IconsSearch } from "../../_Icons/Icons";
 
 const HeaderSearch: FC = () => {
     const location = useLocation();

@@ -1,10 +1,12 @@
 import { FC } from "react";
 
+import HomeBannerBlock from "../../../components/Main/HomeBlocks/HomeBannerBlock/HomeBannerBlock";
+
 const HomePage: FC = () => {
     return (
-        <div>
-            Home Page
-        </div>
+        <main>
+            <HomeBannerBlock />
+        </main>
     );
 };
 

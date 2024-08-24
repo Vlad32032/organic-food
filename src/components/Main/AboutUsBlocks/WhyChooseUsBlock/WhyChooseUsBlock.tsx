@@ -4,7 +4,7 @@ import styles from "./WhyChooseUsBlock.module.scss";
 
 import whyChooseUsBlockBG from "../../../../assets/images/background-image/WhyChooseUsBlockBG.jpg"
 
-import { IconsWhyChooseCart, IconsWhyChooseCircle, IconsWhyChooseClock, IconsWhyChooseLeaf, IconsWhyChooseProtection } from "../../../Icons/aboutUsIcons";
+import { IconsWhyChooseCart, IconsWhyChooseCircle, IconsWhyChooseClock, IconsWhyChooseLeaf, IconsWhyChooseProtection } from "../../../_Icons/aboutUsIcons";
  
 const WhyChooseUsBlock: FC = () => {
     return (
@@ -49,7 +49,7 @@ const WhyChooseUsBlock: FC = () => {
                     <h4>Return Policy</h4>
                     <p>Simply dummy text of the printintypesetting industry.</p>
                 </div>
-                
+
                 <div className={styles.info}>
                     <div className={styles.icon}>
                         <IconsWhyChooseLeaf />

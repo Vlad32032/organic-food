@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useAppSelector } from "../../../redux/store";
 import { selectCartState } from "../../../redux/cart/selectors";
 
-import { IconsCart } from "../../Icons/Icons";
+import { IconsCart } from "../../_Icons/Icons";
 
 const HeaderCart: FC = () => {
     const { cartItems } = useAppSelector(selectCartState);

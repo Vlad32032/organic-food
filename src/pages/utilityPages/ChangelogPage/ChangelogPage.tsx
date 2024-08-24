@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "./ChangelogPage.module.scss";
 
-import { IconsChangelogBG } from "../../../components/Icons/utilityIcons";
+import { IconsChangelogBG } from "../../../components/_Icons/utilityIcons";
 
 import changelogIcon from "../../../assets/images/icons/changelogIcon.jpg";
 

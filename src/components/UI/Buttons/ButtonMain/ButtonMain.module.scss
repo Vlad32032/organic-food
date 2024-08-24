@@ -18,9 +18,15 @@
 
     color: $main-button-text-color;
 
-    transition: transform ease-in 100ms;
+    transition:
+        transform ease-in 100ms,
+        box-shadow ease-in 300ms;
 
     cursor: pointer;
+
+    &:hover {
+        box-shadow: $second-box-shadow;
+    }
 
     &:active {
         transform: translateY(2px);

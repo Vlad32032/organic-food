@@ -1,10 +1,8 @@
 // import s from '../../components'
 
-import { link } from "fs";
-
 // used in /components/Header/HeaderNav
 export const dataNav = [
-    {name: 'Home', pathname: '/home'},
+    {name: 'Home', pathname: '/'},
     {name: 'About', pathname: '/about'},
     {name: 'Shop', pathname: '/shop'},
     {name: 'Team', pathname: '/team'}

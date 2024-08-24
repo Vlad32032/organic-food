@@ -2,6 +2,8 @@ import axios from "axios";
 
 export const URL = 'https://66913f9226c2a69f6e8f1533.mockapi.io/foodProducts';
 
+
+
 export const createUrl = ( searchValue: string, categoriesIndex: number ) => {
 	const search = searchValue ? `&title=${searchValue}` : '';
 	const category = categoriesIndex > 0 ? `&category=${categoriesIndex}` : '';
@@ -18,6 +20,8 @@ export const createUrlByID = ( id: string | undefined ) => {
 export const createUrlByCategory = ( category: number ) => {
 	return `${URL}?category=${category}&sortBy=rating&order=desc`;
 };
+
+
 
 export const axiosFetch = async (url: string) => {
 	const response = await axios.get(url);

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "./LicencesPage.module.scss";
 
-import { IconsLicencesBG } from "../../../components/Icons/utilityIcons";
+import { IconsLicencesBG } from "../../../components/_Icons/utilityIcons";
 
 const LicencesPage: FC = () => {
     return (
