@@ -56,5 +56,13 @@
             font-weight: 800;
             font-size: 70px;
         }
+
+        @media (min-width: 1921px) {
+            left: 18vw;
+        }
+
+        @media (min-width: 2700px) {
+            left: 25vw;
+        }
     }
 }

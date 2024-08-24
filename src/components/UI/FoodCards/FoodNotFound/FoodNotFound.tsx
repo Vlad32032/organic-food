@@ -18,7 +18,7 @@ const FoodNotFound: FC = () => {
         <div className={styles.foodNotFound}>
             <h3>Nothing found...</h3>
 
-            <ButtonMain onClick={onClick}>Cliar search</ButtonMain>
+            <ButtonMain onClick={onClick}>Clear search</ButtonMain>
         </div>
     );
 };

@@ -39,7 +39,7 @@ const CartCard: FC<ICartItem> = ({ id, title, price, images, quantity }) => {
                 <CartActions {...item} />
             </div>
 
-            <ButtonMain onClick={onClickDelite}>Delite</ButtonMain>
+            <ButtonMain onClick={onClickDelite}>Delete</ButtonMain>
         </article>
     );
 };

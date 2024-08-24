@@ -1,0 +1,97 @@
+@import "../../../../scss/variables";
+
+.homeAboutUsBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 90px 0 100px;
+
+    background-color: $second-bg-color;
+
+    &:hover img {
+        transform: scale(1.05) rotate(10deg);
+    }
+
+    img {
+        width: 911px;
+        height: 867px;
+
+        transition: transform ease-in 1800ms;
+    }
+
+    .wrapper {
+        width: 702px;
+
+        h2 {
+            margin-bottom: 8px;
+
+            font-family: $third-font-family;
+            font-weight: 400;
+            font-size: 36px;
+            color: $third-text-color;
+        }
+
+        h3 {
+            margin-bottom: 14px;
+
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        p {
+            margin-bottom: 46px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 165%;
+        }
+
+        &Info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            margin-bottom: 46px;
+
+            .info {
+                display: flex;
+                gap: 19px;
+
+                &:hover .infoIcon {
+                    box-shadow: $second-box-shadow;
+                    transform: translateY(-5px);
+                }
+
+                &Icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 100px;
+                    height: 100px;
+                    
+                    background-color: $main-bg-color;
+                    border-radius: 20px;
+
+                    transition: 
+                        box-shadow ease-in 300ms,
+                        transform ease-in 300ms;
+                }
+
+                &Title {
+                    h4 {
+                        margin-bottom: 8px;
+
+                        font-weight: 800;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        max-width: 444px;
+                    }
+                }
+            }
+        }
+    }
+}
