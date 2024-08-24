@@ -53,7 +53,7 @@ const Footer: FC = () => {
             <div className={styles.footerUtility}>
                 <h2 className={styles.footerH2}>Utility Pages</h2>
                 
-                { footerNav.map((link) => <Link to={link.pathname}>{link.name}</Link>)}
+                { footerNav.map((link) => <Link key={link.name} to={link.pathname}>{link.name}</Link>)}
             </div>
         </footer>
     );

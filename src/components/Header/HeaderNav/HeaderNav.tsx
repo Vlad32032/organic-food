@@ -12,7 +12,7 @@ const HeaderNav: FC = () => {
     return (
         <nav className={styles.headerNav}>
             <ul>
-                {nav.map((link) => <li><Link to={link.pathname}>{link.name}</Link></li>)}
+                {nav.map((link) => <li key={link.name}><Link to={link.pathname}>{link.name}</Link></li>)}
             </ul>
         </nav>
     );

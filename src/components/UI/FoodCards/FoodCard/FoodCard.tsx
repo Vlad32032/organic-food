@@ -16,13 +16,15 @@ interface IFoodCard {
     images: string[]
 };
 
-const FoodCard: FC<IFoodCard> = ({ id, title, description, price, category, rating, images }) => {
+const FoodCard: FC<IFoodCard> = ({ id, title, price, category, rating, images }) => {
     return (
         <Link to={`/food/${id}`}>
             <article className={styles.card}>
                 <div className={styles.cardCategory}>{dataCategories[category].category}</div>
 
-                <img src={images[0]} alt={title} />
+                <div className={styles.cardImg}>
+                    <img src={images[0]} alt={title} />
+                </div>
 
                 <h3>{title}</h3>
                 <div className={styles.cardInfo}>
