@@ -5,6 +5,10 @@
 
     overflow: hidden;
 
+    &:hover div {
+        transform: scale(1.1);
+    }
+
     div {
         display: flex;
         justify-content: center;
@@ -13,6 +17,8 @@
         width: 1920px;
         height: 450px;
         margin: 0 auto;
+
+        transition: transform ease-in 800ms;
 
         h2 {
             font-weight: 800;
