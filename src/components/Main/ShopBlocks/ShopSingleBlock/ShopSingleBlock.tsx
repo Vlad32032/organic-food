@@ -2,7 +2,7 @@ import { FC, useEffect } from "react";
 
 import styles from "./ShopSingleBlock.module.scss";
 
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../../../redux/store";
 import { selectfoodProductsState } from "../../../../redux/foodProducts/selectors";
@@ -17,6 +17,7 @@ import ShopSingleBlockSkeleton from "./ShopSingleBlockSkeleton";
 import FoodRating from "../../../UI/FoodCards/FoodRating/FoodRating";
 import FoodPrice from "../../../UI/FoodCards/FoodPrice/FoodPrice";
 import CartActions from "../../../UI/CartCards/CartActions/CartActions";
+import ButtonMain from "../../../UI/Buttons/ButtonMain/ButtonMain";
 
 const ShopSingleBlock: FC = () => {
     const dispatch = useAppDispatch();
@@ -40,33 +41,46 @@ const ShopSingleBlock: FC = () => {
     };
 
     return (
-        <section className={styles.shopSingleBlock}>
-            { status === 'loading' ? (
-                <ShopSingleBlockSkeleton />
-            ) : foodById && (
-                <>
-                    <div className={styles.wrapperImg}>
-                        <div className={styles.category}>{dataCategories[foodById.category].category}</div>
+        <>
+            <section className={styles.shopSingleBlock}>
+                { status === 'loading' ? (
+                    <ShopSingleBlockSkeleton />
+                ) : foodById && (
+                    <>
+                        <div className={styles.wrapperImg}>
+                            <div className={styles.category}>{dataCategories[foodById.category].category}</div>
 
-                        <img src={foodById.images[0]} alt={foodById.title} />
-                    </div>
-
-                    <div className={styles.wrapperDescription}>
-                        <h2>{foodById.title}</h2>
-
-                        <div className={styles.info}>
-                            <FoodRating rating={foodById.rating}/>
-                            <FoodPrice price={foodById.price} quantity={cartItem ? cartItem.quantity : 1}/>
+                            <img src={foodById.images[0]} alt={foodById.title} />
                         </div>
 
-                        <p className={styles.description}>{foodById.description}</p>
+                        <div className={styles.wrapperDescription}>
+                            <h2>{foodById.title}</h2>
 
-                        <CartActions {...foodById} quantity={1}/>
-                    </div>
-                </>
-            )}
-            
-        </section>
+                            <div className={styles.info}>
+                                <FoodRating rating={foodById.rating}/>
+                                <FoodPrice price={foodById.price} quantity={cartItem ? cartItem.quantity : 1}/>
+                            </div>
+
+                            <p className={styles.description}>{foodById.description}</p>
+
+                            <CartActions {...foodById} quantity={1}/>
+                        </div>
+
+                        
+                    </>
+                )}
+            </section>
+
+            <div className={styles.links}>
+                <Link to='/shop'>
+                    <ButtonMain buttonStyle="third" >Shop</ButtonMain>
+                </Link>
+
+                <Link to='/cart'>
+                    <ButtonMain buttonStyle="third" >Cart</ButtonMain>
+                </Link>
+            </div>
+        </>
     );
 };
 

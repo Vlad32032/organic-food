@@ -21,6 +21,10 @@ export const createUrlByCategory = ( category: number ) => {
 	return `${URL}?category=${category}&sortBy=rating&order=desc`;
 };
 
+export const createUrlForShopHome = () => {
+	return `${URL}?sortBy=rating&order=desc&page=1&limit=8`;
+};
+
 
 
 export const axiosFetch = async (url: string) => {
