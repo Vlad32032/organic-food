@@ -1,14 +1,13 @@
 import { FC } from "react";
 
-import styles from "./Footer.module.scss"
-
-import { Link } from "react-router-dom";
+import styles from "./Footer.module.scss";
 
 import { dataFooterNav } from "../../assets/data/data";
 
+import { Link } from "react-router-dom";
+
 import HeaderLogo from "../Header/HeaderLogo/HeaderLogo";
 import { IconsFacebock, IconsInstagram, IconsPinterest, IconsTwitter } from "../_Icons/Icons";
-import { link } from "fs";
 
 const Footer: FC = () => {
     const footerNav = dataFooterNav;
