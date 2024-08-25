@@ -39,6 +39,10 @@
                 cursor: pointer;
             }
 
+            button:last-child {
+                margin-right: -1px;
+            }
+
             span {
                 display: block;
 
