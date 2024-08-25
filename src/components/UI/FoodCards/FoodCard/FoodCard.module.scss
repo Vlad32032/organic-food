@@ -45,17 +45,22 @@
     }
 
     &Img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         width: 325px;
         height: 314px;
         margin: 0 auto;
 
+        background-color: $main-bg-color;
         border-radius: 18px;
 
         overflow: hidden;
 
         img {
-            width: 325px;
-            height: 324px;
+            width: 244px;
+            height: 220px;
             object-fit: contain;
 
             transition: transform ease-in 300ms;

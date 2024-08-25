@@ -10,6 +10,7 @@ import { removeAllCartItem } from "../../../../redux/cart/slice";
 import FoodPrice from "../../FoodCards/FoodPrice/FoodPrice";
 import CartActions from "../CartActions/CartActions";
 import ButtonMain from "../../Buttons/ButtonMain/ButtonMain";
+import { Link } from "react-router-dom";
 
 const CartCard: FC<ICartItem> = ({ id, title, price, images, quantity }) => {
     const dispatch = useAppDispatch();
@@ -28,18 +29,26 @@ const CartCard: FC<ICartItem> = ({ id, title, price, images, quantity }) => {
 
     return (
         <article className={styles.cartItem}>
-            <img src={images[0]} alt={title} />
+            <div className={styles.wrapper}>
+                <Link to={`/food/${id}`}>
+                    <img src={images[0]} alt={title} />
+                </Link>
+
+                <div className={styles.wrapperDescription}>
+                    <h3>{title}</h3>
+
+                    <FoodPrice price={price} quantity={quantity}/>
+                </div>
+            </div>
+
 
             <div className={styles.wrapper}>
-                <h3>{title}</h3>
+                <div>
+                    <CartActions {...item} />
+                </div>
 
-                <FoodPrice price={price} quantity={quantity}/>
+                <ButtonMain onClick={onClickDelite}>Delete</ButtonMain>
             </div>
-            <div>
-                <CartActions {...item} />
-            </div>
-
-            <ButtonMain onClick={onClickDelite}>Delete</ButtonMain>
         </article>
     );
 };

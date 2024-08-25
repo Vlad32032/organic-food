@@ -27,12 +27,17 @@
 
     .wrapper {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        gap: 30px;
 
-        h3 {
-            font-weight: 800;
-            font-size: 40px;
+        &Description {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h3 {
+                font-weight: 800;
+                font-size: 30px;
+            }
         }
     }    
 }

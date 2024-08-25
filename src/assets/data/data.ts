@@ -20,7 +20,10 @@ export const dataCategories = [
     {id: 0, category: "all"},
     {id: 1, category: "fruits"},
     {id: 2, category: "vegetables"},
-    {id: 3, category: "berries"}
+    {id: 3, category: "mushrooms"},
+    {id: 4, category: "greens"},
+    {id: 5, category: "berries"},
+    
 ];
 
 // used in /components/Main/ShopBlocks/ShopBlockMain
