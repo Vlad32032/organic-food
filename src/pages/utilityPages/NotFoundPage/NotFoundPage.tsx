@@ -11,13 +11,13 @@ const NotFoundPage: FC = () => {
     return (
         <main className={styles.notFount}>
             <div className={styles.wpapper}>
-                <div className={styles.icon}>
-                    <IconsNotFoundBG />
-                </div>
+                <div className={styles.icon}></div>
                 
                 <div className={styles.description}>
-                    <Icons404 />
-
+                    <span>
+                        <Icons404 />
+                    </span>
+                    
                     <h2>Page not found</h2>
                     <p>The page you are looking for doesn't exist or has been moved</p>
 
