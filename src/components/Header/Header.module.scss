@@ -10,6 +10,15 @@
 
     background-color: $main-bg-color;
 
+    @media (max-width: 1700px) {
+        padding: 20px 40px;
+        height: auto;
+
+        @media (max-width: 800px) {
+            padding: 10px 16px;
+        }
+    }
+
     &Wrapper {
         display: flex;
         justify-content: space-between;
@@ -18,10 +27,28 @@
 
         width: 1596px;
 
+        @media (max-width: 1700px) {
+            flex-wrap: wrap;
+            gap: 20px;
+
+            width: 100%;
+        }
+
         .wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            @media (max-width: 1600px) {
+                width: 100%;
+
+                @media (max-width: 400px) {
+                    &:first-child {
+                        flex-wrap: wrap;
+                        gap: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -35,16 +62,39 @@
             font-weight: 700;
             font-size: 38px;
         }
+
+        @media (max-width: 800px) {
+            .logoName {
+                font-size: 24px;
+            }
+
+            svg {
+                width: 20px;
+                height: 30px;
+            }
+        }
     } 
 
     &Nav {
         margin-left: 150px;
+
+        @media (max-width: 1700px) {
+            margin-left: 0;
+        }
 
         ul {
             display: flex;
             gap: 50px;
 
             width: 564px;
+
+            @media (max-width: 1200px) {
+                width: 100%;
+
+                @media (max-width: 800px) {
+                    gap: 20px;
+                }
+            }
 
             a {
                 text-decoration: none;
@@ -54,6 +104,10 @@
                 color: inherit;
 
                 cursor: pointer;
+
+                @media (max-width: 800px) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -65,6 +119,11 @@
             position: absolute;
             top: 5px;
             right: 6px;
+
+            @media (max-width: 1600px) {
+                width: 30px;
+                height: 30px;
+            }
         }
 
         input {
@@ -88,7 +147,17 @@
             &::-ms-input-placeholder { /* Edge 12 -18 */
                 color: #ababab;
             }
+
+            @media (max-width: 1600px) {
+                width: 40vw;
+                min-width: 150px;
+                height: 40px;
+                padding-right: 40px;
+                padding-left: 16px;
+            }
         }
+
+
     }
 
     &Cart {
@@ -116,6 +185,36 @@
         span {
             font-weight: 600;
             font-size: 18px;
+        }
+
+        @media (max-width: 1600px) {
+            width: 20vw;
+            min-width: 125px;
+            height: 40px;
+            padding-left: 40px;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            @media (max-width: 400px) {
+                min-width: 40px;
+                width: 40px;
+                padding: 0;
+
+                svg {
+                    left: 4px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
         }
     }
 }
