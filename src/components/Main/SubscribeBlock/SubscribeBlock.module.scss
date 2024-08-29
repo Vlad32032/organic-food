@@ -10,6 +10,10 @@
 
     background-color: $main-bg-color;
 
+    @media (max-width: 1450px) {
+        margin: 16px;
+    }
+
     .form {
         display: flex;
         justify-content: space-between;
@@ -25,6 +29,15 @@
 
         border-radius: 30px;
 
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+
+            width: 100%;
+            height: auto;
+            min-height: 323px;
+            padding: 0 20px;
+        }
+
         h2 {
             max-width: 355px;
     
@@ -32,6 +45,10 @@
             font-size: 50px;
     
             color: $fourth-text-color;
+
+            @media (max-width: 1100px) {
+                font-size: 40px;
+            }
         }
     }
 
@@ -41,6 +58,10 @@
         align-items: center;
         gap: 10px;
 
+        @media (max-width: 500px) {
+            flex-wrap: wrap;
+        }
+
         input {
             width: 349px;
             height: 80px;
@@ -49,9 +70,11 @@
             background-color: $main-bg-color;
             border-radius: 16px;
 
-            // &:focus {
-            //     border: 1px solid $main-border-color;
-            // }
+            @media (max-width: 1100px) {
+                width: 40vw;
+                min-width: 210px;
+                height: 40px;
+            }
 
             &::placeholder {
 
