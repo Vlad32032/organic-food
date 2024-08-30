@@ -13,6 +13,11 @@
         background-color ease-in 300ms,
         box-shadow ease-in 300ms;
 
+    @media (max-width: 500px) {
+         width: 300px;
+         height: 400px;
+    }
+
     &:hover {
         background-color: $main-bg-color;
         box-shadow: $main-box-shadow;
@@ -27,6 +32,11 @@
         height: 485px;
 
         transition: transform ease-in 800ms;
+
+        @media (max-width: 500px) {
+            width: 300px;
+            height: 310px;
+       }
     }
 
     .wrapper {
@@ -40,14 +50,30 @@
 
         background-color: inherit;
 
+        @media (max-width: 500px) {
+            flex-direction: column;
+
+            padding: 10px 16px;
+        }
+
         &Title {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
+            @media (max-width: 500px) {
+                flex-direction: row;
+                justify-content: start;
+                gap: 20px;
+            }
+
             h4 {
                 font-weight: 800;
                 font-size: 25px;
+
+                @media (max-width: 500px) {
+                    font-size: 20px;
+                }
             }
     
             span {
@@ -55,6 +81,10 @@
                 font-weight: 400;
                 font-size: 22px;
                 color: $third-text-color;
+
+                @media (max-width: 500px) {
+                    font-size: 18px;
+                }
             }
         }
 
