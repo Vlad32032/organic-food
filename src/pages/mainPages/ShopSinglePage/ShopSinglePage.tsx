@@ -9,7 +9,7 @@ const ShopSinglePage: FC = () => {
         <main>
             <BannerBlock title='Shop Single'/>
             <ShopSingleBlock />
-            <ShopRelatedProductsBlock />
+            {/* <ShopRelatedProductsBlock /> */}
         </main>
     );
 };
