@@ -23,9 +23,12 @@
         width: 1400px;
 
         @media (max-width: 1450px) {
-            align-items: center;
-
             width: 100%;
+
+
+            @media (max-width: 1250px) {
+                align-items: center;
+            }
         }
 
         &Button {
