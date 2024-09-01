@@ -10,7 +10,7 @@ const AboutUsPage: FC = () => {
         <main>
             <BannerBlock title='About Us'/>
             <AboutUsBlock />
-            {/* <WhyChooseUsBlock /> */}
+            <WhyChooseUsBlock />
             <TeamBlock />
         </main>
     );
