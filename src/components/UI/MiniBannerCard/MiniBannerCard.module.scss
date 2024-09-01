@@ -16,6 +16,11 @@
 
     transition: box-shadow ease-in 300ms;
 
+    @media (max-width: 850px) {
+        width: 300px;
+        height: 200px;
+    }
+
     &:hover {
         box-shadow: $main-box-shadow;
     }
@@ -26,6 +31,11 @@
 
     img {
         transition: transform ease-in 800ms;
+
+        @media (max-width: 850px) {
+            width: 400px;
+            height: 200px;
+        }
     }
 
     .wrapper {
@@ -33,12 +43,21 @@
         top: 110px;
         left: 55px;
 
+        @media (max-width: 850px) {
+            top: 70px;
+            left: 20px;
+        }
+
         h2 {
             margin-bottom: 5px;
 
             font-family: $third-font-family;
             font-weight: 400;
             font-size: 36px;
+
+            @media (max-width: 850px) {
+                font-size: 20px;
+            }
         }
 
         h3 {
@@ -46,6 +65,10 @@
 
             font-weight: 800;
             font-size: 40px;
+
+            @media (max-width: 850px) {
+                font-size: 30px;
+            }
         }
     }
 
