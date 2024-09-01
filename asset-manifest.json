@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/organic-food/static/css/main.aa44f391.css",
+    "main.js": "/organic-food/static/js/main.88bd5f0d.js",
+    "static/media/NotFoundBG.jpg": "/organic-food/static/media/NotFoundBG.d8bcee389e484b28b8f9.jpg",
+    "static/media/HomeAboutUsBlockBG.png": "/organic-food/static/media/HomeAboutUsBlockBG.083bf84f0adb457e8b0c.png",
+    "static/media/BannerBGShop.jpg": "/organic-food/static/media/BannerBGShop.d2dc2d4c59375be2706b.jpg",
+    "static/media/HomeBannerBlockBG.jpg": "/organic-food/static/media/HomeBannerBlockBG.e0542b3fc52b38e858eb.jpg",
+    "static/media/AboutUsBlockBG.jpg": "/organic-food/static/media/AboutUsBlockBG.01526c10bd8ba3b96830.jpg",
+    "static/media/BannerBGCart.jpg": "/organic-food/static/media/BannerBGCart.3324b68e19677efcbbff.jpg",
+    "static/media/BannerBGAboutUs.jpg": "/organic-food/static/media/BannerBGAboutUs.b094fb689e27d58694b8.jpg",
+    "static/media/subscribeBlockBG.jpg": "/organic-food/static/media/subscribeBlockBG.4f58b637bf38e2df5195.jpg",
+    "static/media/BannerBGOurTeam.jpg": "/organic-food/static/media/BannerBGOurTeam.6ff055ee1310ec867244.jpg",
+    "static/media/RigaPelore.jpg": "/organic-food/static/media/RigaPelore.6130311ed2d425010efc.jpg",
+    "static/media/WhyChooseUsBlockBG.jpg": "/organic-food/static/media/WhyChooseUsBlockBG.a983e273fc3983401cf7.jpg",
+    "static/media/KarenAllen.jpg": "/organic-food/static/media/KarenAllen.ba30b188d94443915e8a.jpg",
+    "static/media/MarianneLoreno.jpg": "/organic-food/static/media/MarianneLoreno.9efba870871d3af5f5ab.jpg",
+    "static/media/ScottLawrence.jpg": "/organic-food/static/media/ScottLawrence.f13c8e7267929264bfdc.jpg",
+    "static/media/miniBannerBG-2.jpg": "/organic-food/static/media/miniBannerBG-2.124db7ef6df91efb8c29.jpg",
+    "static/media/BannerBGShopSingle.jpg": "/organic-food/static/media/BannerBGShopSingle.9feae5ad5e1caa37e391.jpg",
+    "static/media/KeiraKnightley.jpg": "/organic-food/static/media/KeiraKnightley.e28ff6c1c62dbad3c03c.jpg",
+    "static/media/GiovaniBacardo.jpg": "/organic-food/static/media/GiovaniBacardo.a0a7e3673fb8f6aef446.jpg",
+    "static/media/miniBannerBG-1.jpg": "/organic-food/static/media/miniBannerBG-1.8ac34699e26fe9343bb7.jpg",
+    "static/media/changelogIcon.jpg": "/organic-food/static/media/changelogIcon.c9621be5b0149135a257.jpg",
+    "index.html": "/organic-food/index.html",
+    "main.aa44f391.css.map": "/organic-food/static/css/main.aa44f391.css.map",
+    "main.88bd5f0d.js.map": "/organic-food/static/js/main.88bd5f0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa44f391.css",
+    "static/js/main.88bd5f0d.js"
+  ]
+}
