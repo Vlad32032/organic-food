@@ -6,11 +6,26 @@
     align-items: center;
 
     padding: 90px 0 100px;
-
     background-color: $second-bg-color;
+
+    @media (max-width: 1700px) {
+        padding: 40px 0;
+
+        @media (max-width: 1500px) {
+            flex-direction: column;
+        }
+    }
 
     &:hover img {
         transform: scale(1.05) rotate(10deg);
+
+        @media (max-width: 1700px) {
+            transform: scale(1.03) rotate(8deg);
+
+            @media (max-width: 500px) {
+                transform: scale(1.03);
+            }
+        }
     }
 
     img {
@@ -18,10 +33,30 @@
         height: 867px;
 
         transition: transform ease-in 1800ms;
+
+        @media (max-width: 1700px) {
+            width: 811px;
+            height: 767px;
+
+            @media (max-width: 950px) {
+                width: 411px;
+                height: 367px;
+            }
+
+            @media (max-width: 500px) {
+                width: 280px;
+                height: 250px;
+            }
+        }
     }
 
     .wrapper {
         width: 702px;
+
+        @media (max-width: 800px) {
+            width: 100%;
+            padding: 0 16px;
+        }
 
         h2 {
             margin-bottom: 8px;
@@ -30,6 +65,10 @@
             font-weight: 400;
             font-size: 36px;
             color: $third-text-color;
+
+            @media (max-width: 800px) {
+                font-size: 26px;
+            }
         }
 
         h3 {
@@ -37,6 +76,18 @@
 
             font-weight: 800;
             font-size: 50px;
+
+            @media (max-width: 800px) {
+                max-width: 400px;
+
+                font-size: 36px;
+
+                @media (max-width: 400px) {
+                max-width: 300px;
+
+                font-size: 26px;
+            }
+            }
         }
 
         p {
@@ -45,6 +96,10 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 165%;
+
+            @media (max-width: 800px) {
+                font-size: 14px;
+            }
         }
 
         &Info {
@@ -53,6 +108,10 @@
             gap: 30px;
 
             margin-bottom: 46px;
+
+            @media (max-width: 800px) {
+                margin-bottom: 0px;
+            }
 
             .info {
                 display: flex;
@@ -85,6 +144,10 @@
 
                         font-weight: 800;
                         font-size: 25px;
+
+                        @media (max-width: 400px) {
+                            font-size: 20px;
+                        }
                     }
 
                     p {
