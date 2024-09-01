@@ -7,14 +7,34 @@
 
     width: 1600px;
 
+    @media (max-width: 1600px) {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        margin: 30px auto;
+    }
+
     &:hover img {
         transform: rotate(10deg) scale(1.05);
+
+        @media (max-width: 1800px) {
+            transform: scale(1.02);
+        }
     }
 
     img {
         width: 900px;
 
         transition: transform ease-in 800ms;
+
+        @media (max-width: 1000px) {
+            width: 500px;
+
+            @media (max-width: 550px) {
+                width: 280px;
+            }
+        }
     }
 
     .wrapper {
@@ -24,6 +44,11 @@
         width: 675px;
         margin-top: 80px;
 
+        @media (max-width: 1600px) {
+            padding: 0 16px;
+            margin-top: 30px;
+        }
+
         h2 {
             margin-bottom: 8px;
 
@@ -31,6 +56,10 @@
             font-weight: 400;
             font-size: 36px;
             color: $third-text-color;
+
+            @media (max-width: 550px) {
+                font-size: 20px;
+            }
         }
 
         h3 {
@@ -38,6 +67,10 @@
 
             font-weight: 800;
             font-size: 50px;
+
+            @media (max-width: 550px) {
+                font-size: 30px;
+            }
         }
 
         .description {
@@ -50,11 +83,19 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 165%;
+
+            @media (max-width: 550px) {
+                font-size: 14px;
+            }
         }
 
         .points {
             display: flex;
             gap: 65px;
+
+            @media (max-width: 750px) {
+                flex-wrap: wrap;
+            }
 
             div {
                 display: flex;
@@ -64,6 +105,10 @@
 
                 font-weight: 500;
                 font-size: 25px;
+
+                @media (max-width: 550px) {
+                    font-size: 18px;
+                }
             }
         }
     }
